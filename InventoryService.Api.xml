@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>InventoryService.Api</name>
+    </assembly>
+    <members>
+        <member name="M:InventoryService.Api.Controllers.InfoController.GetAsync">
+            <summary>
+            Get server info.
+            </summary>
+            <returns>
+            Server info
+            </returns>
+        </member>
+        <member name="M:InventoryService.Api.Controllers.InventoryController.GetAsync(System.String)">
+            <summary>
+            Retrieves one or more inventory items.
+            </summary>
+            <returns>
+            Inventory items
+            </returns>
+            <param name="skus">The list of comma-separated SKUs.</param>
+        </member>
+        <member name="M:InventoryService.Api.Controllers.InventoryController.GetSingleBadAsync(System.String)">
+            <summary>
+            Retrieves an inventory item (susceptible to SQL injection).
+            </summary>
+            <returns>
+            Inventory item
+            </returns>
+            <param name="sku">The product SKU.</param>
+        </member>
+        <member name="M:InventoryService.Api.Controllers.InventoryController.GetSingleAsync(System.String)">
+            <summary>
+            Retrieves an inventory item.
+            </summary>
+            <returns>
+            Inventory item
+            </returns>
+            <param name="sku">The product SKU.</param>
+        </member>
+        <member name="M:InventoryService.Api.Controllers.InventoryController.IncrementAsync(System.String)">
+            <summary>
+            Increments an inventory item quantity by one.
+            </summary>
+            <returns>
+            The updated inventory item
+            </returns>
+            <param name="sku">The product SKU.</param>
+        </member>
+        <member name="M:InventoryService.Api.Controllers.InventoryController.DecrementAsync(System.String)">
+            <summary>
+            Decrements an inventory item quantity by one.
+            </summary>
+            <returns>
+            The updated inventory item
+            </returns>
+            <param name="sku">The product SKU.</param> 
+        </member>
+    </members>
+</doc>
